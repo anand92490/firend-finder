@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "This is a compatibility-based friend finder application- basically a dating app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anand92490/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anand92490/friend-finder/issues"
+  },
+  "homepage": "https://github.com/anand92490/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
