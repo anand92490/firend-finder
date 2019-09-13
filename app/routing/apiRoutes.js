@@ -1,5 +1,5 @@
 
-var tableData = require("../data/friend");
+var friends = require("../data/friend");
 
 module.exports = function(app) {
   // API GET Requests

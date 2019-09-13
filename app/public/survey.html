@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .jumbotron {
+        background-color: #d7effcc9;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="font-weight: bold; color: rgb(41, 48, 113); font-family: cursive " class="display-4 text-center">
+                ⚤ Start the Survey ⚤</h1> <br>
+            <p style="text-align: justify" class="lead">Complete the survey below to find the perfect match. Each answer
+                to the question can be rated on the scale of 1 to 5 based on how much you agree or disagree with a
+                question. Based on your response we will match the most viable candidate for you.</p>
+            <hr class="my-4">
+            <form>
+                <div class="form-group">
+                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+                </div><br>
+                <div class="form-group">
+                    <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+                </div>
+                <div class="form-group">
+                    <label for="question1">I love to travel.</label>
+                    <select class="form-control" id="question1">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question2">Money is not very important to me but living a meaningful life is.</label>
+                    <select class="form-control" id="question2">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question3">I love to cook.</label>
+                    <select class="form-control" id="question3">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question4">I'm very disciplined when it comes to tidiness, hygine and punctuality.</label>
+                    <select class="form-control" id="question4">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question5">I take time to excercise or go to gym regularly.</label>
+                    <select class="form-control" id="question5">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question6">Personality is more more important to me than appearence.</label>
+                    <select class="form-control" id="question6">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question7">I'm good with my spending habits and managing money.</label>
+                    <select class="form-control" id="question7">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question8">I'm a morning person.</label>
+                    <select class="form-control" id="question8">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question9">I am very goal oriented and focuesd when it comes to career.</label>
+                    <select class="form-control" id="question9">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question10">How likely are you willing to put others first before yourself?</label>
+                    <select class="form-control" id="question10">
+                        <option value="empty"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </form>
+            <div class="text-center">
+                <button id="submitBtn" type="submit" class="btn btn-info btn-lg">Submit</button><br>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href=""></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
