@@ -1,4 +1,4 @@
-var friends = [
+let friends = [
     {
         name: "Shrinkhala Khatiwada",
         photo: "https://www.sanjaal.com/content/wp-content/uploads/2018/11/srinkhala_khatiwada_miss_nepal_2018.jpg",
