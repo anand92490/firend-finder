@@ -15,6 +15,11 @@
         background-color: #d7effcc9;
         box-shadow: 15px 15px 7px rgba(24, 96, 179, 0.466);
     }
+
+    #bestFriendPhoto {
+        max-width: 100%;
+        height: auto;
+    }
 </style>
 
 <body>
@@ -148,9 +153,6 @@
             <div class="text-center">
                 <button id="submitBtn" type="submit" class="btn btn-info btn-lg">Submit</button><br>
             </div>
-
-
-
         </div>
     </div>
 
@@ -161,14 +163,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">Your New Best Friend</h1>
+                    <h3 class="modal-title">Here's your New Match</h1>
                 </div>
                 <div class="modal-body">
                     <h2 id="bestFriend"></h2>
                     <img id="bestFriendPhoto" src="#">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Match Again</button>
                 </div>
             </div>
         </div>
@@ -221,7 +223,7 @@
 
             if (valid === true) {
 
-                let userInput = {
+                const userInput = {
                     name: $("#name").val.trim(),
                     photo: $("#photo").val.trim(),
                     scores: [
@@ -241,10 +243,10 @@
                 };
 
 
-                var currentURL = window.location.origin;
+              
                 // Ajax call for receiving response after POST req
-                $.post(currentURL + "/api/friends", newUser, function (data) {
-                    console.log(data);
+                $.post("/api/friends", userInput, function (data) {
+                   
                     $("#bestFriend").text(data.name);
                     $("#bestFriendPhoto").attr("src", data.photo);
                     $("#bestFriendModal").modal("toggle");

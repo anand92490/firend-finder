@@ -57,7 +57,7 @@ let friends = [
         name: "Rose O'lordno",
         photo: "https://cdn.ebaumsworld.com/mediaFiles/picture/565775/81394960.jpg",
         scores: [5, 2, 3, 1, 4, 2, 3, 2, 1, 4]
-    },
+    }
 
 ];
 
