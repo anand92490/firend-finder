@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Friend Finder</title>
+	<title>Survey - Paddy's Pub Social Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
     .jumbotron {
@@ -21,164 +17,158 @@
         height: auto;
     }
 </style>
-
 <body>
-    <div class="container">
+	<div class="container content">
         <div class="jumbotron">
             <h1 style="font-weight: bold; color: rgb(41, 48, 113); font-family: cursive " class="display-4 text-center">
                 ⚤ Start the Survey ⚤</h1> <br>
             <p style="text-align: justify" class="lead">Complete the survey below to find the perfect match. Each answer
-                to the question can be rated on the scale of 1 to 5 based on how much you agree or disagree with a
-                question. Based on your response we will match the most viable candidate for you.</p>
+                to the question can be rated on the scale of 1 to 5. Based on your response we will match the most viable candidate for you.</p>
             <hr class="my-4">
-            <form>
+		<form>
                 <div class="form-group">
                     <input id="name" type="text" class="form-control" placeholder="Name (Required)">
-                </div><br>
-                <div class="form-group">
-                    <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
                 </div>
                 <div class="form-group">
-                    <label for="question1">I love to travel.</label>
-                    <select class="form-control" id="question1">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                    <input id="photo" type="text" class="form-control" placeholder="Link a Profile Photo (Required)">
                 </div>
-                <div class="form-group">
-                    <label for="question2">Money is not very important to me but living a meaningful life is.</label>
-                    <select class="form-control" id="question2">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question3">I love to cook.</label>
-                    <select class="form-control" id="question3">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question4">I'm very disciplined when it comes to tidiness, hygine and
-                        punctuality.</label>
-                    <select class="form-control" id="question4">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question5">I take time to excercise or go to gym regularly.</label>
-                    <select class="form-control" id="question5">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question6">Personality is more more important to me than appearence.</label>
-                    <select class="form-control" id="question6">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question7">I'm good with my spending habits and managing money.</label>
-                    <select class="form-control" id="question7">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question8">I'm a morning person.</label>
-                    <select class="form-control" id="question8">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question9">I am very goal oriented and focuesd when it comes to career.</label>
-                    <select class="form-control" id="question9">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="question10">How likely are you willing to put others first before yourself?</label>
-                    <select class="form-control" id="question10">
-                        <option value="empty"></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </form>
-            <div class="text-center">
-                <button id="submitBtn" type="submit" class="btn btn-info btn-lg">Submit</button><br>
+            <div class="form-group">
+                <label for="question1">I love to travel.</label>
+                <select class="form-control" id="question1">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
-        </div>
-    </div>
-
-    <!-- modal section to display the new match -->
-
-    <div id="bestFriendModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">Here's your New Match</h1>
-                </div>
-                <div class="modal-body">
-                    <h2 id="bestFriend"></h2>
-                    <img id="bestFriendPhoto" src="#">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Match Again</button>
-                </div>
+            <div class="form-group">
+                <label for="question2">Money is not very important to me but living a meaningful life is.</label>
+                <select class="form-control" id="question2">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
-        </div>
-    </div>
-    </div>
+            <div class="form-group">
+                <label for="question3">I love to cook.</label>
+                <select class="form-control" id="question3">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4">I'm very disciplined when it comes to tidiness, hygine and
+                    punctuality.</label>
+                <select class="form-control" id="question4">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question5">I take time to excercise or go to gym regularly.</label>
+                <select class="form-control" id="question5">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question6">Personality is more more important to me than appearence.</label>
+                <select class="form-control" id="question6">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question7">I'm good with my spending habits and managing money.</label>
+                <select class="form-control" id="question7">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question8">I'm a morning person.</label>
+                <select class="form-control" id="question8">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question9">I am very goal oriented and focuesd when it comes to career.</label>
+                <select class="form-control" id="question9">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question10">How likely are you willing to put others first before yourself?</label>
+                <select class="form-control" id="question10">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+			</div>
+		</form>
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
+		
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Your New Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-    <footer class="footer">
+	<footer class="footer">
         <div class="container">
             <p>
                 <a href="api/friends"><strong>Api Firend List</strong></a> <span>|</span>
@@ -187,81 +177,51 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-
-        // window.onload = function () {
-        //     if (window.jQuery) {
-        //         // jQuery is loaded  
-        //         alert("Yeah!");
-        //     } else {
-        //         // jQuery is not loaded
-        //         alert("Doesn't Work");
-        //     }
-        // }
-
-        //Event handler for submit button to gather user input 
-        $("#submitBtn").on("click", function (event) {
-            event.preventDefault();
-
-            var valid = true;
-
-            if ($("#name").val() === "" || $("#photo").val() === "") {
-                valid = false;
-            } else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
-                valid = false;
-            }
-
-            if (valid === true) {
-
-                const userInput = {
-                    name: $("#name").val.trim(),
-                    photo: $("#photo").val.trim(),
-                    scores: [
-                        $("#question1").val(),
-                        $("#question2").val(),
-                        $("#question3").val(),
-                        $("#question4").val(),
-                        $("#question5").val(),
-                        $("#question6").val(),
-                        $("#question7").val(),
-                        $("#question8").val(),
-                        $("#question8").val(),
-                        $("#question9").val(),
-                        $("#question10").val()
-
-                    ]
-                };
-
-
-              
-                // Ajax call for receiving response after POST req
-                $.post("/api/friends", userInput, function (data) {
-                   
-                    $("#bestFriend").text(data.name);
-                    $("#bestFriendPhoto").attr("src", data.photo);
-                    $("#bestFriendModal").modal("toggle");
-                });
-
-            } else {
-                // If a required field is missing, show alert
-                alert("Survey is incomplete!");
-            }
-
-
-        });
-
-
-    </script>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>
