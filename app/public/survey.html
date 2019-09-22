@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Survey - Paddy's Pub Social Network</title>
+	<title>Survey friend fiender</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -186,6 +186,18 @@
 </html>
 
 <script type="text/javascript">
+
+
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        console.log("Yeah!");
+    } else {
+        // jQuery is not loaded
+        console.log("Doesn't Work");
+    }
+}
+
 	$("#submitBtn").on("click", function(event) {
 		event.preventDefault();
 		// Form validation
